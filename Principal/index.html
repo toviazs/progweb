@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N1</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand ms-1" href="#">
+                <img src="./Recursos/logo.png" alt="Bootstrap" width="24" height="24"> TecnoMundo
+            </a>
+            <button class="navbar-toggler d-lg-none bg-primary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ms-auto mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" aria-current="page">Principal<span
+                                class="visually-hidden"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Productos/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/QuienesSomos/quienesSomos.html">Quiénes somos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="#">Home</a>
+            <span class="breadcrumb-item active" aria-current="page">Quiénes somos</span>
+        </nav>
+        <div class="container">
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col col-xl-6 d-md-inline">
+                    <!-- Carrusel 1 -->
+                    <div id="carousel-1" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="0" class="active" aria-current="true"
+                                aria-label="First slide"></li>
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carousel-1" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="recursos/androids.jpg" class="w-100 d-block" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Android supremacy</h3>
+                                    <p>Los últimos modelos android</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/iphones.jpg" class="w-100 d-block" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Iphone legacy</h3>
+                                    <p>Todo el catálogo de teléfonos Apple</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/google-pixels.jpg" class="w-100 d-block" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Google identity</h3>
+                                    <p>Los diferentes "Pixels" de Google</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col col-xl-6 d-none d-md-inline">
+                    <!-- Carrusel 2 -->
+                    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carousel-2" data-bs-slide-to="0" class="active" aria-current="true"
+                                aria-label="First slide"></li>
+                            <li data-bs-target="#carousel-2" data-bs-slide-to="1" aria-label="Second slide"></li>
+                            <li data-bs-target="#carousel-2" data-bs-slide-to="2" aria-label="Third slide"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img src="recursos/phone-battery.jpg" class="w-100 d-block" alt="First slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Batería</h3>
+                                    <p>Para navegar durante todo el día</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/phone-camera.jpg" class="w-100 d-block" alt="Second slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Cámaras</h3>
+                                    <p>Para capturar los mejores momentos</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/flip-phone.jpg" class="w-100 d-block" alt="Third slide">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Novedades</h3>
+                                    <p>Lo más novedoso de este mundo tech</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center g-2">
+                <div class="col">
+                    <h3 class="display-3 mt-2 mb-2 border-top border-secondary">Descripción del proyecto</h3>
+                    <p class="mb-2 p-1 border-bottom border-secondary">
+                        Somos una empresa dedicada a la venta de productos de informática de manera online. Nuestra
+                        misión es ofrecer los productos más novedosos, populares y destacados a un precio accesible.
+                        Buscamos ofrecer envíos a todo el país, a un precio justo, con tiempos de espera reducidos y con
+                        todas las comodidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor de las cards -->
+
+        <div class="container mb-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col">
+                    <div class="container-fluid">
+                        <div class="row justify-content-center align-items-stretch">
+                            <div class="col-12 col-md-12 col-xl-4">
+                                <div class="card text-center m-1">
+                                    <img class="card-img-top" src="recursos/precios-bajos.jpg" alt="low-prices-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Precios bajos</h4>
+                                        <p class="card-text">Los precios más competitivos en el mundo de los teléfonos
+                                            móviles</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="card text-center m-1">
+                                    <img class="card-img-top" src="recursos/envios.jpg" alt="shipment">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Envíos a todo el país</h4>
+                                        <p class="card-text">Llegamos a cualquier parte del país, en poco tiempo y a un
+                                            precio
+                                            razonable</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="card text-center m-1">
+                                    <img class="card-img-top" src="recursos/financiacion.jpg" alt="financing">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Financiación</h4>
+                                        <p class="card-text">Las mejores opciones para que puedas financiar tus compras
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark py-3 row align-items-center">
+        <div class="row justify-content-center align-items-center">
+            <div class="col">
+                <div class="container">
+                    <div class="row justify-content-center align-items-stretch g-2">
+                        <div class="col-3">
+                            <p class="text-white text-end">© TecnoMundo - 2022 </p>
+                        </div>
+                        <div class="col-1 text-start">
+                            <img src="./Recursos/logo.png" alt="Bootstrap" width="24" height="24">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

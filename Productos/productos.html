@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabajo Práctico N1</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/eadb2c6c05.js" crossorigin="anonymous"></script>
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <a class="navbar-brand ms-1" href="#">
+        <img src="./Recursos/logo.png" alt="Bootstrap" width="24" height="24"> TecnoMundo
+      </a>
+      <button class="navbar-toggler d-lg-none bg-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+        aria-label="Toggle navigation">
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav ms-auto mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/Principal/index.html">Principal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" aria-current="page">Productos<span class="visually-hidden"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/QuienesSomos/quienesSomos.html">Quiénes somos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="breadcrumb">
+      <a class="breadcrumb-item" href="#">Home</a>
+      <span class="breadcrumb-item active" aria-current="page">Productos</span>
+    </nav>
+  </header>
+  <main>
+    <h1 class="text-center catalogo m-3">Catálogo de Productos</h1>
+    <div class="border p-3 border-5 rounded-4 border-dark cuadro-busqueda mx-auto">
+      <div class="row justify-content-center align-items-stretch g-2">
+        <div class="col-12 col-md-10 d-flex">
+          <input class="form-control" type="text" placeholder="Ingrese Producto">
+        </div>
+
+        <div class="col-12 col-md-2">
+          <button class="btn btn-outline-primary w-100" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i> Buscar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <table class="table table-striped table-hover table-sm mx-auto mt-5 mb-5">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Foto</th>
+          <th scope="col">Nombre</th>
+          <th scope="col" class="d-none d-md-block">Descripcion</th>
+          <th scope="col">Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img class="img-fluid" src="Recursos/galazy-z-fold-4.png" alt="Samsung Galaxy Fold"></td>
+          <td>Samsung Galaxy Z Fold 4</td>
+          <td class="d-none d-md-table-cell">Con una pantalla interna Dynamic AMOLED 2X de 7.6
+            pulgadas y una externa de
+            6.23
+            pulgadas, este smartphone plegable está potenciado por un procesador Snapdragon 865+ con 12GB de memoria RAM
+            y 256GB de espacio de almacenamiento no expandible.</td>
+          <td><span class="fw-bold">$379.999</span></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td><img class="img-fluid" src="Recursos/iphone-14-pro.png" alt="Iphone 14 Pro"></td>
+          <td>Iphone 14 Pro</td>
+          <td class="d-none d-md-table-cell">Con Detección de Choques. La mayor duración de batería hasta ahora en un
+            iPhone.
+            Fotos con poca luz aún más espectaculares. Y además, vienen en cinco colores increíbles</td>
+          <td><span class="fw-bold">$400.000</span></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td><img class="img-fluid" src="Recursos/Moto-edge-30-ultra.png" alt="Moto Edge"></td>
+          <td>Motorola Edge 30 Ultra</td>
+          <td class="d-none d-md-table-cell">Obtené batería para todo el día en solo 7 minutos de carga* gracias a la
+            carga
+            TurboPower™ de 125 W, la más rápida hasta el momento. Capturá fotos detalladas en condiciones de poca luz
+            gracias al increíble sensor de 200 MP con tecnología Ultra Pixel</td>
+          <td><span class="fw-bold">$220.000</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="bg-dark py-3 row align-items-center">
+    <div class="row justify-content-center align-items-center">
+      <div class="col">
+        <div class="container">
+          <div class="row justify-content-center align-items-stretch g-2">
+            <div class="col-3">
+              <p class="text-white text-end">© TecnoMundo - 2022 </p>
+            </div>
+            <div class="col-1 text-start">
+              <img src="./Recursos/logo.png" alt="Bootstrap" width="24" height="24">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

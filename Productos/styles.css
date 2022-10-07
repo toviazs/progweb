@@ -1,0 +1,35 @@
+.navbar {
+    background: #edaef9;
+    background: -moz-linear-gradient(left, #edaef9 0%, #81b1fa 100%);
+    background: -webkit-linear-gradient(left, #edaef9 0%, #81b1fa 100%);
+    background: linear-gradient(to right, #edaef9 0%, #81b1fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edaef9', endColorstr='#81b1fa', GradientType=1);
+}
+
+* {
+    font-family: 'PT Sans', sans-serif;
+}
+
+@media (min-width:540px) and (max-width:992px) {
+
+    .table,
+    .cuadro-busqueda {
+        width: 75% !important;
+    }
+}
+
+@media (max-width:540px) {
+
+    .table,
+    .cuadro-busqueda {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:992px) {
+
+    .table,
+    .cuadro-busqueda {
+        width: 75% !important;
+    }
+}

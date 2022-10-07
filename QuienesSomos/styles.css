@@ -1,0 +1,25 @@
+.copyright {
+    padding: 10px;
+    background-color: rgb(134, 48, 160);
+}
+
+.card {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: scale(1.07);
+}
+
+.navbar {
+    background: #edaef9;
+    background: -moz-linear-gradient(left, #edaef9 0%, #81b1fa 100%);
+    background: -webkit-linear-gradient(left, #edaef9 0%, #81b1fa 100%);
+    background: linear-gradient(to right, #edaef9 0%, #81b1fa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#edaef9', endColorstr='#81b1fa', GradientType=1);
+}
+
+.bold {
+    font-weight: bold;
+}
