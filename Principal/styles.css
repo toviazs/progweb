@@ -13,3 +13,16 @@
 .card:hover {
     transform: scale(1.01);
 }
+
+.carousel-caption {
+    opacity: 0;
+    transition: 500ms ease-in-out;
+}
+
+.carousel-item:hover .carousel-caption {
+    opacity: 1;
+}
+
+.carousel-item:hover #imagen-carousel {
+    filter: brightness(30%);
+}
